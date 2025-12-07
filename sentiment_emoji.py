@@ -33,6 +33,7 @@ def sentiment_analysis(text):
         "sentiment": label,
         "emojis_found": emojis,
         "emoji_sentiments": emoji_sentiments
+
     }
 
 # Contoh komentar
@@ -46,7 +47,7 @@ comments = [
 
 for c in comments:
     analysis = sentiment_analysis(c)
-    print(f"Teks: {analysis['text']}")
-    print(f"Sentimen teks: {analysis['sentiment']}")
-    print(f"Emoji terdeteksi: {analysis['emojis_found']}")
-    print(f"Sentimen emoji: {analysis['emoji_sentiments']}\n")
+    print(f"Text: {analysis['text']}")
+    print(f"Text Sentiment: {analysis['sentiment']}")
+    print(f"Detected Emojis: {analysis['emojis_found']}")
+    print(f"Emoji Sentiments: {analysis['emoji_sentiments']}\n")
